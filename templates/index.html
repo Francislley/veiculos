@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Tipo de Veículos</title>
+</head>
+<body>
+Gerenciamento de Frotas
+<br>
+Tipos de Veículos
+<br>
+
+{% for Tipoveiculo in lista %}
+    {{ Tipoveiculo.id }} - {{ Tipoveiculo.tipo }} <br>
+{% endfor %}
+
+<!--<br>-->
+<!--<a href="/mostrarmarca">Link Para Mostrar Marcas</a>-->
+<!--<br>-->
+<!--<a href="/Mostrarveiculo">Link Para Mostrar Veículos</a>-->
+
+<!--AQUI DÁ PRA SÓ FAZER UM INCLUDE SEM REPETIR O MENU-->
+{% include '_menu.html' %}
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Marcas</title>
+</head>
+<body>
+
+Mostrar Marcas dos Veículos
+<br>
+
+{% for Marcaveiculo in mostrarmarca %}
+    {{ Marcaveiculo.id }} - {{ Marcaveiculo.marca }} <br>
+{% endfor %}
+
+<!--<br>-->
+<!--<a href="/">Página Principal</a>-->
+<!--<br>-->
+<!--<a href="/Mostrarveiculo">Link Para Mostrar Veículos</a>-->
+
+<!--AQUI DÁ PRA SÓ FAZER UM INCLUDE SEM REPETIR O MENU-->
+{% include '_menu.html' %}
+
+</body>
+</html>
